@@ -1,0 +1,62 @@
+.home {
+  .home-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // 侧边logo
+    .home-logo {
+      height: 64px;
+      background: linear-gradient(90deg, #1d1e23, #3f4045);
+    }
+    // 侧边栏
+    .home-menu-box {
+      height: calc(100vh - 64px);
+      overflow-y: auto;
+      .home-menu {
+        min-height: 100%;
+      }
+    }
+    // 清除侧边栏滚动条
+    .home-menu-box::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .home-right {
+    padding-left: 180px;
+    // 顶部导航
+    .home-top {
+      height: 64px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 180px;
+      // align-items: center;
+      justify-content: flex-end;
+      z-index: 22;
+      background: #fff;
+      padding: 0 24px;
+      box-sizing: border-box;
+      .home-tool{
+        width:160px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        .info{
+          padding:6px 0;
+          p{
+            margin-bottom:3px;
+          }
+        }
+      }
+    }
+
+    // 内容
+    .home-content {
+      background: #f5f7f9;
+      padding: 80px 18px 18px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    
+  }
+}

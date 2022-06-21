@@ -1,0 +1,36 @@
+/* 弹性布局 */
+.flex {
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+
+
+.row {
+    flex: 1;
+}
+.space-between {
+    justify-content: space-between;
+}
+/* 行级元素位置 */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+/* 字体超出省略号显示 */
+.text-overflow {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,43 @@
+.login {
+    width: 100vw;
+    min-width: 1200px;
+    height: 100vh;
+    display: flex;
+    background: url("../../assets/img/background.png") no-repeat right center;
+    background-size: 1000px;
+    .left {
+        width: calc(100% - 528px);
+        height: 100%;
+        background: url("../../assets/img/backgrouond-item.png") no-repeat center center #FFF;
+        background-size: 80%;
+        box-shadow: 5px 0 21px 0 rgba(62, 105, 255, 0.36);
+        border-radius: 0 50px 50px 0;
+    }
+    .right {
+        position: relative;
+        width: 528px;
+        height: 100%;
+    }
+    .container {
+        background: #FFF;
+        width: 381px;
+        height: 267px;
+        //box-shadow: 0 0 5px #CCC;
+        border-radius: 8px;
+        padding: 60px 40px 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container::after {
+        content: "";
+        width: 100%;
+        height: 18px;
+        background: #6291FF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 8px 8px 0 0;
+    }
+}
