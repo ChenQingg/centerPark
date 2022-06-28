@@ -36,7 +36,7 @@ const base = {
     ],
     [{ header: 1 }, { header: 2 }],
     [{ align: [] }],
-    ["image", "video"]
+    // ["image", "video"]
   ]
 };
 

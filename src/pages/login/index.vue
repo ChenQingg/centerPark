@@ -21,9 +21,6 @@
             ></Input>
           </FormItem>
           <FormItem>
-            <!-- <Button size="large" type="primary" style="width: 100%"
-              >登录</Button
-            > -->
             <Button
               size="large"
               type="primary"

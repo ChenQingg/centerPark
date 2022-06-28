@@ -2,7 +2,10 @@
   <div class="home">
     <div class="home-left">
       <!-- 侧边logo -->
-      <div class="home-logo"></div>
+      <div class="home-logo">
+        <img src="@/assets/img/icon.png" alt="" class="imgIcon">
+        <p>中心公园后台管理</p>
+      </div>
       <!-- 侧边栏 -->
       <div class="home-menu-box">
         <Menu
@@ -11,7 +14,7 @@
           :active-name="menuActive"
           :open-names="menuOpen"
           :accordion="true"
-          width="180px"
+          width="208px"
         >
           <div v-for="(item, index) in menuList" :key="index">
             <Submenu :name="index" v-if="item.children">
@@ -40,21 +43,6 @@
     <div class="home-right">
       <!-- 顶部导航 -->
       <div class="home-top flex space-between">
-        <!-- 左侧面包屑导航 -->
-        <!-- <div class="home-crumb">
-          <Breadcrumb>
-            <BreadcrumbItem to="/index">
-              <Icon type="ios-home-outline"></Icon>
-              <span>首页</span>
-            </BreadcrumbItem>
-            <BreadcrumbItem>
-              <span>{{ parentName }}</span>
-            </BreadcrumbItem>
-            <BreadcrumbItem :to="activeHref">
-              <span>{{ activeName }}</span>
-            </BreadcrumbItem>
-          </Breadcrumb>
-        </div> -->
         <!-- 右侧工具栏 -->
         <div class="home-tool">
           <div class="info">

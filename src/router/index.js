@@ -25,13 +25,13 @@ export default new Router({
         {
           path: "/personal",
           name: "personal",
-          meta: { title: "个人认证" },
+          meta: { title: "个人用户" },
           component: () => import("@/pages/personal/index/index.vue")
         },
         {
           path: "/business",
           name: "business",
-          meta: { title: "商业认证" },
+          meta: { title: "商业用户" },
           component: () => import("@/pages/business/index.vue")
         },
         {

@@ -18,7 +18,7 @@ export default {
             },
             {
               name: "商业用户",
-              href: "/business"
+              href: "/content"
             },
           ]
         },
@@ -28,7 +28,7 @@ export default {
           children: [
             {
               name: "商业用户",
-              href: "/content"
+              href: "/business"
             }
           ]
         },
@@ -47,26 +47,11 @@ export default {
           icon: "md-cash",
           children: [
             {
-              name: "内容管理",
+              name: "APP公告",
               href: "/substance"
             }
           ]
         }
-
-        // {
-        //   name: "代理商管理",
-        //   icon: "md-medal",
-        //   children: [
-        //     {
-        //       name: "代理商列表",
-        //       href: "/agent"
-        //     },
-        //     {
-        //       name: "代理商业绩",
-        //       href: "/agent-achievement"
-        //     },
-        //   ]
-        // },
       ],
       // 导航默认选中
       menuActive: "",
@@ -187,19 +172,6 @@ export default {
       } else {
         // 跳转到指定位置
         this.moveSlowTag(href);
-        // 修改面包屑
-        // this.menuList.forEach(e => {
-        //   e.children.forEach(c => {
-        //     if (item === c.href) {
-        //       // 要展开分组的名称
-        //       this.parentName = e.name;
-        //       // 当前选中的名称
-        //       this.activeName = c.name;
-        //       // 当前选中的路由
-        //       this.activeHref = c.href;
-        //     }
-        //   });
-        // });
       }
     },
     // 打开对应标签
